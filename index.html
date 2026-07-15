@@ -18,7 +18,7 @@
                 extend: {
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
-                        deep: '#030712', /* Ultra dark background */
+                        deep: '#030712',
                         neonCyan: '#22d3ee',
                         neonPurple: '#a855f7'
                     }
@@ -69,7 +69,6 @@
             box-shadow: 0 10px 30px -10px rgba(34, 211, 238, 0.2);
         }
 
-        /* Animations */
         @keyframes float {
             0% { transform: translateY(0px) scale(1); }
             100% { transform: translateY(30px) scale(1.1); }
@@ -92,13 +91,11 @@
 </head>
 <body class="antialiased selection:bg-neonCyan selection:text-deep">
 
-    <!-- Ambient Background -->
     <div class="glow-bg">
         <div class="glow-orb-1"></div>
         <div class="glow-orb-2"></div>
     </div>
 
-    <!-- Main Container -->
     <div class="max-w-6xl mx-auto px-6 py-20 lg:py-32">
         
         <!-- HERO SECTION -->
@@ -115,7 +112,7 @@
                 AI Operations, DevOps & <span class="bg-clip-text text-transparent bg-gradient-to-r from-neonCyan to-neonPurple">Cloud Engineer</span>
             </h2>
             <p class="max-w-2xl mx-auto text-lg text-gray-400 mb-10 leading-relaxed">
-                Currently undertaking a massive <strong class="text-white">1000+ Practical Labs Challenge</strong> to master real-world Cloud, DevSecOps, and AI deployments. Building the invisible systems the modern world depends on.
+                Currently undertaking a massive <strong class="text-white">1000+ Practical Labs Challenge</strong> to master real-world Cloud, DevSecOps, and AI deployments.
             </p>
             <div class="flex justify-center gap-4">
                 <a href="#garage" class="px-8 py-3 rounded-full bg-white text-deep font-semibold hover:bg-gray-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)]">
@@ -132,12 +129,10 @@
             </div>
             
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <!-- Large Card -->
                 <div class="glass-card rounded-2xl p-6 col-span-2 md:col-span-2 row-span-2 flex flex-col justify-center">
                     <h4 class="text-xl font-bold text-white mb-2">Docker & Kubernetes</h4>
                     <p class="text-gray-400 text-sm">Containerizing complex applications and orchestrating production-grade clusters at scale.</p>
                 </div>
-                <!-- Small Cards -->
                 <div class="glass-card rounded-2xl p-6 flex flex-col justify-center items-center text-center">
                     <span class="text-neonCyan font-bold mb-1">Linux</span>
                     <span class="text-xs text-gray-400">RedHat & Bash</span>
@@ -157,54 +152,19 @@
             </div>
         </section>
 
-        <!-- THE LAB GARAGE (PROJECTS) -->
+        <!-- THE LAB GARAGE (PROJECTS SECTION FETCHED DYNAMICALLY) -->
         <section id="garage" class="mt-32 fade-in-up delay-2">
             <div class="flex items-center gap-4 mb-10">
                 <h3 class="text-2xl font-bold tracking-wide">The Lab Garage</h3>
                 <div class="h-[1px] flex-1 bg-gradient-to-r from-white/20 to-transparent"></div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                <!-- Project 1 -->
-                <div class="glass-card rounded-2xl p-8 relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-neonCyan/10 rounded-full blur-2xl group-hover:bg-neonCyan/20 transition-all"></div>
-                    <span class="inline-block px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-500 border border-yellow-500/20 text-xs font-bold tracking-wider mb-4">
-                        ⏳ IN PROGRESS
-                    </span>
-                    <h4 class="text-xl font-bold text-white mb-3">Linux Server Automation</h4>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">Configuring secure RedHat environments and automating routine administrative tasks using advanced Bash scripting.</p>
-                    <div class="text-neonCyan text-sm font-semibold flex items-center gap-2 cursor-not-allowed opacity-50">
-                        Code dropping soon →
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="glass-card rounded-2xl p-8 relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-neonPurple/10 rounded-full blur-2xl group-hover:bg-neonPurple/20 transition-all"></div>
-                    <span class="inline-block px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-500 border border-yellow-500/20 text-xs font-bold tracking-wider mb-4">
-                        ⏳ QUEUED
-                    </span>
-                    <h4 class="text-xl font-bold text-white mb-3">Containerized AI Models</h4>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">Building a predictive AI model with Python, containerizing it using Docker, and ensuring seamless deployment.</p>
-                    <div class="text-neonPurple text-sm font-semibold flex items-center gap-2 cursor-not-allowed opacity-50">
-                        Architecture incoming →
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="glass-card rounded-2xl p-8 relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl group-hover:bg-white/10 transition-all"></div>
-                    <span class="inline-block px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-500 border border-yellow-500/20 text-xs font-bold tracking-wider mb-4">
-                        ⏳ QUEUED
-                    </span>
-                    <h4 class="text-xl font-bold text-white mb-3">Secure CI/CD Pipelines</h4>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">Integrating DevSecOps principles to build an automated, vulnerability-free software deployment pipeline.</p>
-                    <div class="text-white text-sm font-semibold flex items-center gap-2 cursor-not-allowed opacity-50">
-                        Docs drafting →
-                    </div>
-                </div>
-
+            <!-- Dynamic Grid Loader -->
+            <div id="garage-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Loading State / Skeleton -->
+                <div class="animate-pulse glass-card rounded-2xl p-8 h-64"></div>
+                <div class="animate-pulse glass-card rounded-2xl p-8 h-64"></div>
+                <div class="animate-pulse glass-card rounded-2xl p-8 h-64"></div>
             </div>
         </section>
 
@@ -213,7 +173,6 @@
             <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
             <p class="text-gray-400 mb-8">Join the journey of building robust infrastructure and AI systems.</p>
             <div class="flex justify-center gap-6">
-                <!-- Replace # with your actual links -->
                 <a href="#" class="text-gray-400 hover:text-white transition-colors border border-white/10 px-6 py-2 rounded-full hover:bg-white/5">LinkedIn</a>
                 <a href="#" class="text-gray-400 hover:text-white transition-colors border border-white/10 px-6 py-2 rounded-full hover:bg-white/5">GitHub</a>
             </div>
@@ -222,5 +181,65 @@
 
     </div>
 
+    <!-- SCRIPT TO FETCH GOOGLE SHEET DATA -->
+    <script>
+        // ⚠️ APNI GOOGLE SPREADSHEET ID YAHAN UDDAT KAREIN:
+        const sheetId = '1D8c8TKeplDwcr3TVCdtTmGspqRbTQ7ad5dgUhMCvXKA';
+        const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json`;
+
+        async function loadLabs() {
+            const grid = document.getElementById('garage-grid');
+            try {
+                const res = await fetch(url);
+                const text = await res.text();
+                // Parse Google Sheet JSON wrapper
+                const json = JSON.parse(text.substring(47, text.length - 2));
+                const rows = json.table.rows;
+                
+                grid.innerHTML = ''; // Clear skeleton loaders
+
+                rows.forEach((row) => {
+                    // Extract column values
+                    const title = row.c[0] ? row.c[0].v : 'Untitled Lab';
+                    const status = row.c[1] ? row.c[1].v : 'QUEUED';
+                    const desc = row.c[2] ? row.c[2].v : 'No description provided.';
+                    const link = row.c[3] ? row.c[3].v : '#';
+
+                    // Set dynamic badge colors
+                    let badgeClass = "bg-yellow-500/10 text-yellow-500 border-yellow-500/20";
+                    if (status.toUpperCase() === 'COMPLETED' || status.toUpperCase() === 'SUCCESS') {
+                        badgeClass = "bg-green-500/10 text-green-500 border-green-500/20";
+                    } else if (status.toUpperCase() === 'IN PROGRESS') {
+                        badgeClass = "bg-blue-500/10 text-neonCyan border-neonCyan/20";
+                    }
+
+                    // Check if there is an active link
+                    const isLinkActive = link && link !== '#';
+                    const linkHTML = isLinkActive 
+                        ? `<a href="${link}" target="_blank" class="text-neonCyan text-sm font-semibold hover:underline flex items-center gap-2">View Source Code & Architecture →</a>`
+                        : `<div class="text-gray-500 text-sm font-semibold flex items-center gap-2 cursor-not-allowed opacity-50">Docs drafting →</div>`;
+
+                    // Generate Card HTML
+                    const card = `
+                        <div class="glass-card rounded-2xl p-8 relative overflow-hidden group">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl group-hover:bg-neonCyan/10 transition-all"></div>
+                            <span class="inline-block px-3 py-1 rounded-full ${badgeClass} border text-xs font-bold tracking-wider mb-4">
+                                ${status.toUpperCase()}
+                            </span>
+                            <h4 class="text-xl font-bold text-white mb-3">${title}</h4>
+                            <p class="text-gray-400 text-sm mb-6 leading-relaxed">${desc}</p>
+                            ${linkHTML}
+                        </div>
+                    `;
+                    grid.innerHTML += card;
+                });
+            } catch (error) {
+                grid.innerHTML = '<p class="text-red-500 text-center col-span-full">⚠️ Error loading data. Please check your Spreadsheet ID and sharing settings.</p>';
+                console.error(error);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadLabs);
+    </script>
 </body>
 </html>
